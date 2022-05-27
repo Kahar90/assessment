@@ -9,6 +9,7 @@
     "bootstrap": "^5.2.0-beta1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^2.1.0"
   },
@@ -16,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +42,8 @@
     "@types/react": "^18.0.9",
     "miragejs": "^0.1.41",
     "typescript": "^4.7.2"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.38"
   }
 }
