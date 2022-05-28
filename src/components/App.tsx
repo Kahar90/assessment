@@ -189,7 +189,7 @@ function App() {
                                 <td>{title}</td>
                                 <td>{summary}</td>
                                 {/* Added a button here where it is wrap with Link tag. This button will
-                                take us to the details page, passing alot a few variables to display in the next page.
+                                take us to the details page, passing along a few variables to display in the next page.
                                 By doing it this way, each of the table entry will have unique data to that entry. */}
                                 <Link
                                   to={'/details/${id}'}
